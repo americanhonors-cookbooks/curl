@@ -1,6 +1,7 @@
 # curl Cookbook
 
 [![Build Status](https://travis-ci.org/americanhonors/chef-curl.svg?branch=master)][build-status]
+[![Dependency Status](https://gemnasium.com/americanhonors/chef-curl.svg)][dependency-status]
 
 Installs and configures curl and libcurl.
 
@@ -95,4 +96,5 @@ limitations under the License.
 ```
 
 [build-status]: https://travis-ci.org/americanhonors/chef-curl
+[dependency-status]: https://gemnasium.com/americanhonors/chef-curl
 [opscode-cookbooks]: https://github.com/opscode-cookbooks
