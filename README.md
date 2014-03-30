@@ -5,27 +5,46 @@
 
 Installs and configures [curl and libcurl][curl].
 
-## Supported Platforms
+## Requirements
+
+### Cookbooks
+
+The following cookbooks are direct dependencies:
+
+* [apt][apt-cookbook]
+
+### Platforms
+
+The following platforms are supported and tested:
 
 * Ubuntu 12.04
+
+Other Debian distributions are assumed to work.
 
 ## Attributes
 
 ### default
 
-**TODO**
+* `node['curl']['package_name']` - Name of the package used to install curl.
+* `node['libcurl']['variant']` - The variant of libcurl to install. One of `openssl`, `gnutls`, `nss` (Default: `openssl`)
+* `node['libcurl']['package_name']` - Name of the package used to install libcurl (Default: depends on `node['libcurl']['variant']`)
+* `node['libcurl']['dev_package_name']` - Name of the package used to install libcurl development headers (Default: depends on `node['libcurl']['variant']`)
 
 ## Recipes
 
 ### default
 
-**TODO**
+The default recipe will install curl and libcurl via packages, with the variant of libcurl specified by `node['libcurl']['variant']`.
 
 ### dev
 
+The dev recipe will install libcurl development headers via packages, with the variant of libcurl specified by `node['libcurl']['variant']`.
+
 ## Usage
 
-**TODO**
+Include the default recipe in your node or role and specify the libcurl variant if you wish to use GnuTLS or NSS.
+
+Use the dev recipe if you need development headers for libcurl.
 
 ## Development & Testing
 
@@ -98,4 +117,5 @@ limitations under the License.
 [build-status]: https://travis-ci.org/americanhonors/chef-curl
 [dependency-status]: https://gemnasium.com/americanhonors/chef-curl
 [curl]: http://curl.haxx.se/
+[apt-cookbook]: https://github.com/opscode-cookbooks/apt
 [opscode-cookbooks]: https://github.com/opscode-cookbooks
