@@ -1,7 +1,7 @@
 # curl Cookbook
 
-[![Build Status](https://travis-ci.org/americanhonors/chef-curl.svg?branch=master)][build-status]
-[![Dependency Status](https://gemnasium.com/americanhonors/chef-curl.svg)][dependency-status]
+[![Build Status](https://travis-ci.org/americanhonors-cookbooks/curl.svg?branch=master)][build-status]
+[![Dependency Status](https://gemnasium.com/americanhonors-cookbooks/curl.svg)][dependency-status]
 
 Installs and configures [curl and libcurl][curl].
 
@@ -70,7 +70,7 @@ Use the dev recipe if you need development headers for libcurl.
 
 ## License & Authors
 
-* Author:: Tony Burns (<tony.burns@americanhonors.org>)
+* Author:: Tony Burns (<tony.burns@americanhonors-cookbooks.org>)
 
 ```text
 Copyright (c) 2014 Quad Learning, Inc.
@@ -114,8 +114,8 @@ See the License for the specific language governing permissions and
 limitations under the License.
 ```
 
-[build-status]: https://travis-ci.org/americanhonors/chef-curl
-[dependency-status]: https://gemnasium.com/americanhonors/chef-curl
+[build-status]: https://travis-ci.org/americanhonors-cookbooks/curl
+[dependency-status]: https://gemnasium.com/americanhonors-cookbooks/curl
 [curl]: http://curl.haxx.se/
 [apt-cookbook]: https://github.com/opscode-cookbooks/apt
 [opscode-cookbooks]: https://github.com/opscode-cookbooks
